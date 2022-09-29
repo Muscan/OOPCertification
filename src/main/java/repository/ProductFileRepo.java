@@ -121,5 +121,9 @@ public class ProductFileRepo {
             System.out.println(product);
         }
     }
+
+    public List<Product> getProducts(){
+        return products;
+    }
 }
 
