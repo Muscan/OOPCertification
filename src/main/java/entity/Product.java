@@ -1,10 +1,6 @@
 package entity;
-
 import enumeration.*;
-
 import java.time.LocalDate;
-import java.util.Comparator;
-import java.util.Locale;
 
 public class Product {
 
