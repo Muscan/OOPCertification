@@ -13,7 +13,7 @@ public class Tests {
     static UI ui;
     @BeforeClass
     public static void initializeObjects(){
-        productFileRepo = new ProductFileRepo("src/main/java/utils/products.txt");
+        productFileRepo = new ProductFileRepo("utils/products.txt");
         ui = new UI(productFileRepo);
     }
     @Test
