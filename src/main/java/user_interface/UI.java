@@ -7,21 +7,31 @@ import repository.ProductFileRepo;
 import java.time.LocalDate;
 import java.util.*;
 
-public class UI implements I_UI{
-    private ProductFileRepo fileRepo;//The repo we are using to do crud operations on
+// Definim clasa `UI`, care implementează interfața `I_UI`.
+public class UI implements I_UI {
 
-    public UI(ProductFileRepo fr){
-        this.fileRepo = fr;
+    // Declaram o variabilă privată `fileRepo`, care reprezintă repo-ul (repositoriul) de produse
+    // utilizat pentru operațiile CRUD (Create, Read, Update, Delete) asupra produselor.
+    private ProductFileRepo fileRepo;
+
+    // Constructorul clasei `UI` care primește un obiect de tip `ProductFileRepo` ca argument.
+    public UI(ProductFileRepo fr) {
+        this.fileRepo = fr; // Inițializăm variabila `fileRepo` cu obiectul primit ca argument.
     }
 
-    public void displayProductCategories(){
+    // Metodă pentru afișarea categoriilor disponibile de produse.
+    public void displayProductCategories() {
+        // Afișăm în consolă un mesaj care indică că urmează să se afișeze categoriile disponibile.
         System.out.println("Available categories:");
+
+        // Afișăm în consolă lista categoriilor de produse disponibile, fiecare pe o linie separată.
         System.out.println("FRUITS");
         System.out.println("VEGETABLES");
         System.out.println("SWEETS");
         System.out.println("TOOLS");
         System.out.println("FURNITURE");
     }
+
 
     public String readProductCategory() {
         // declarare lista cu cele 5 categorii
